@@ -1,0 +1,49 @@
+Deadlock  
+- a situation when two or more processes wait for each other to finish and none of them ever finish.
+- when two or more processes hold some resources and wait for resources held by other(s)
+- eg: two trains on the same track facing each other, none of the trains can move 
+
+Deadlock Conditions 
+
+Mutual Exclusion: 
+- two or more resources are non-shareable 
+- only 1 process can use it at a time 
+- there is a resource that can not be shared 
+
+Hold and Wait: 
+- a process is holding at least one resource and waiting for another resource which is with some other process 
+
+No preemption:
+- OS is not allowed to take a resource back from a process until the process gives it back 
+
+Circular Wait: 
+- a set of processes waiting for each other in circular form 
+
+Deadlock Detection
+
+- process of finding whether any processes are stuck in a loop or not 
+- the system checks if there are any sets of processes that are stuck waiting for each other indefinitely
+
+Deadlock Detection Algorithms 
+
+- Resource Allocation Graph
+
+- Banker's Algorithm 
+	-- resource allocation and deadlock avoidance algorithm 
+	-- analogous to how a banker would evaluate loan requests
+	-- to ensure the bank can meet all customer needs without running out of funds 
+	-- checks if allocating a requested resource will keep the system in a safe state before granting it
+
+	-- Safe State: A state is considered "safe" if the system can allocate resources to all processes in some order without leading to a deadlock.
+
+
+
+Deadlock recovery methods 
+
+- Process termination 
+	-- abort all the deadlock processes 
+	-- abort one process at a time until the deadlock is terminated 
+
+- Resource preemption 
+	-- Rollback 
+	-- Selecting a victim

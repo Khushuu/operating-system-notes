@@ -1,0 +1,27 @@
+Classic Synchronization problems 
+
+well-known problems in OS and concurrent programming 
+
+Producer-Consumer problem (Bounded-buffer)
+	- producer generates data and keeps in BB 
+	- consumer retrieves data from buffer for processing 
+	- producer must not add data when buffer is full and consumer must not retrieve data when buffer is empty 
+	- GOAL: 
+		synchronize producer and consumer operations to ensure data consistency and prevent buffer overflows 	and underflows
+	- SOLUTION: 
+		Use Semaphores
+		- mutex semaphore: for mutual exclusion 
+		- empty semaphore: to track empty slots in buffer 
+		- full semaphore: to track filled slots in buffer 
+
+
+Readers-writers 
+Dining philosophers 
+Sleeping barber 
+
+Techniques 
+
+Mutexes 
+Condition variables 
+Semaphores
+File locks

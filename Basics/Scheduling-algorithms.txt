@@ -1,0 +1,34 @@
+FCFS (First come first serve) scheduling algorithm 
+
+- first job in the ready queue is assigned the CPU first and then assigned to next 
+- non-preemptive scheduling algorithm (what is this?)
+
+RR (Round robin) scheduling algorithm
+
+- also called time slicing scheduling 
+- each job assigned in a time slot or quantum
+- if not completed in the time slot, appended at the back of the queue 
+- cyclic 
+- no priority given to any process or task  
+
+Goals of CPU scheduling
+
+- max CPU utilization
+- max throughput (number of processes that complete their execution per time unit)
+- min turnaround time (time taken by a process to finish execution)
+- min waiting time (time a process waits in a ready queue)
+- min response time (time when a process produces the first response)
+
+Difference b/w Preemptive and non-preemptive scheduling 
+
+- PS: 
+-- process uses CPU for a limited time 
+-- executing process interrupted if high priority process comes 
+-- overhead of switching the process from ready state to running state 
+-- low priority process starves if high-priority process arrives frequently to ready queue 
+
+- NPS: 
+-- process uses CPU till it terminates or switches to waiting state
+-- executing process not interrupted even if high priority process comes 
+-- no overhead of switching the process from ready state to running state 
+-- small burst time process starves if CPU allocated to process having large burst time 

@@ -1,0 +1,15 @@
+Pipes
+
+- technique used for inter-process communication 
+- output of one process directed as input of another process 
+
+Named pipes 
+
+Message Queuing 
+
+Semaphores 
+
+Shared Memory 
+
+Sockets 
+
